@@ -8,3 +8,11 @@ $bg-color: #ffe7d2;
 
 // font
 $primary-font:'Open Sans', sans-serif;
+
+// utility
+
+a{
+    color: $main-font-color;
+    text-decoration: none;
+    font-weight: 600;
+}

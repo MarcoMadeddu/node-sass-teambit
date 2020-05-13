@@ -1,0 +1,48 @@
+// G E N E R A L  S T Y L E //
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $primary-font;
+}
+
+//site
+.site{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    height: 1000px;   
+}
+
+//container
+.container{
+    width: 1200px;
+}
+
+//button
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.white{
+    width: 110px;
+    background-color: #fff;
+    border: 2px solid $btn-color;
+    color: $btn-color;
+}
+
+//img
+.small-logo{
+    max-width: 20px;
+    margin-right: 5px;
+}

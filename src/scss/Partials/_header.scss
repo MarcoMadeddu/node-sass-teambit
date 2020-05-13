@@ -1,0 +1,27 @@
+// H E A D E R //
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    border-bottom: 1px solid $border-color;
+    .left-side{
+        height: 20px;
+        flex-basis: 50%;
+        
+        
+    }
+    .right-side{
+        flex-basis: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .menu-inline li{
+            display: inline-block;
+            list-style: none;
+            margin-left: 40px;
+            
+        }
+    }
+}
+

@@ -3,8 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-@import "_variable";
-@import "_general";
+@import "Partials/_variable";
+@import "Partials/_general";
+@import "Partials/_header";
+@import "Partials/_mainsection";
 h2{
     color: $main-font-color;
 }
