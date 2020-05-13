@@ -5,15 +5,27 @@ main{
     .jumbotron{
         display: flex;
         height: 500px;
+        margin-top: $m-top;
         .jumbo-left{
-            border: 1px solid yellow;
-            height: 100%;
             flex-basis: 50%;
+            h2{
+                font-size: 50px;
+                margin-bottom: 40px;
+            }
+            p{
+                font-size: 22px;
+                margin-bottom: 40px;
+            }
+            a{
+                font-size: 12px;
+            }
         }
         .jumbo-right{
-            border: 1px solid green;
-            height: 100%;
+            margin-left: 30px;
             flex-basis: 50%;
+            background-image: url('../../../dist/img/illustration-main.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
 }

@@ -7,6 +7,7 @@
 
 body{
     font-family: $primary-font;
+    color: $main-font-color;
 }
 
 //site
@@ -20,18 +21,29 @@ body{
 
 //container
 .container{
-    width: 1200px;
+    width: 1120px;
 }
 
 //button
+.btn-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    span{
+        margin: 0 10px;
+        opacity: 0.5;
+    }
+}
 .button{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    width: 150px;
+    padding: 8px;
+    width: 200px;
     border-radius: 10px;
     font-size: 15px;
+    background-color: $btn-color;
+    color: white;
 }
 
 .white{
