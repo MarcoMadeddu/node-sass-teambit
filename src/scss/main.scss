@@ -3,3 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
+@import "_variable";
+@import "_general";
+h2{
+    color: $main-font-color;
+}
