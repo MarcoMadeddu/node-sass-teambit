@@ -10,12 +10,43 @@ body{
     color: $main-font-color;
 }
 
+// mixin
+
+@mixin flex($content:flex-start, $direction:row ,$align:center){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+}
+
+@mixin button($color:white , $width:200px , $bg-color:$btn-color , $border:none , $bg-hover: #243055){
+    @include flex($content: center);
+    padding: 8px;
+    width: $width;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: $bg-color;
+    color:  $color;
+    border: $border;
+    transition: background 0.4s, color 0.4s ;
+    &:hover{
+        background-color: $bg-hover;
+        color: white;
+    }
+}
+
 //site
 .site{
     display: flex;
     flex-direction: column;
     align-items: center;  
 }
+a{
+    color: $main-font-color;
+    text-decoration: none;
+    font-weight: 600;
+}
+
 
 //container
 .container{
@@ -25,32 +56,14 @@ body{
 
 //button
 .btn-container{
-    display: flex;
-    align-items: center;
+   @include flex;
     margin-bottom: 20px;
     span{
         margin: 0 10px;
         opacity: 0.5;
     }
 }
-.button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    width: 200px;
-    border-radius: 10px;
-    font-size: 15px;
-    background-color: $btn-color;
-    color: white;
-}
 
-.white{
-    width: 110px;
-    background-color: #fff;
-    border: 2px solid $btn-color;
-    color: $btn-color;
-}
 
 //img
 .small-logo{

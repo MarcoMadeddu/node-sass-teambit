@@ -16,6 +16,9 @@
             a{
                 font-size: 12px;
             }
+            .button{
+                @include button;
+            }
         }
         .jumbo-right{
             margin-left: 30px;
