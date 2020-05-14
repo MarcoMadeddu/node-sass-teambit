@@ -162,8 +162,7 @@ main .core-2 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 80px;
-  border-bottom: 1px solid #bdb5af;
+  margin: 80px 0;
 }
 
 main .core-1 h2,
@@ -177,6 +176,11 @@ main .core-1 > img,
 main .core-2 > img {
   max-width: 300px;
   margin: 100px 0;
+}
+
+main .core-1:first-child,
+main .core-2:first-child {
+  border-bottom: 1px solid #bdb5af;
 }
 
 main .card-collector {
@@ -196,7 +200,11 @@ main .card-collector .card {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+main .card-collector h4 {
   font-size: 20px;
+  font-weight: 300;
 }
 
 main .card-collector img {
@@ -209,7 +217,6 @@ main .card-collector img:last-child {
 }
 
 .main2 {
-  width: 95%;
   height: 900px;
 }
 
@@ -232,8 +239,7 @@ main .card-collector img:last-child {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 400px;
-  text-align: left;
+  height: 100%;
 }
 
 .main2 .wrapper .wrap-text img {
@@ -241,6 +247,18 @@ main .card-collector img:last-child {
 }
 
 .main2 .wrapper .wrap-text h2 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.main2 .wrapper .wrap-text a {
+  color: #2e4691;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.main2 .wrapper .wrap-text p {
+  font-size: 18px;
   margin-bottom: 20px;
 }
 

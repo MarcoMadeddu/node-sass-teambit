@@ -1,6 +1,5 @@
 // M A I N  2 //
 .main2{
-    width: 95%;
     height: 900px;
     .wrapper{
         @include flex($content:center);
@@ -11,13 +10,23 @@
             max-width: 900px;
         }
         .wrap-text{
-            @include flex($direction:column, $align: flex-start);
-            width: 400px;
-            text-align: left;
+            @include flex($direction:column, $align: flex-start , $content: flex-start);
+            height: 100%;
+            
             img{
                 max-width: 300px;
             }
             h2{
+                margin-bottom: 20px;
+                font-size: 25px;
+            }
+            a{
+                color: $btn-color;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 18px;
                 margin-bottom: 20px;
             }
         }
