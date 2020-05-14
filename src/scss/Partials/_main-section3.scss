@@ -1,0 +1,51 @@
+// M A I N  3 //
+
+.main3{
+    background-color: $bg-color;
+    margin-top: $m-top;
+    width: 100%;
+    @include flex ($direction: column, $align:center);
+    h2{
+        text-align: center;
+        max-width: 50%;
+        margin-top: 50px;
+        font-size: 35px;
+    }
+    a{
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    .message{
+        background-color: #fff;
+        width: 650px;
+        margin: 50px auto;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+        p{
+            margin: 30px;
+            
+        }
+        .founders{
+            @include flex();
+            margin-bottom: 20px;
+            img{
+                max-width: 40px;
+            }
+            .founder-img{
+                margin: auto 10px auto 30px;
+            }
+            .founder-txt{
+                h4{
+                    color: $btn-color;
+                    font-weight: 400;
+                }
+                h6{
+                    color: $border-color;
+                }
+            }
+        }
+    }
+    .button{
+        @include button;
+    }
+}

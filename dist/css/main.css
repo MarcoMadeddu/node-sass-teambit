@@ -276,4 +276,83 @@ main .card-collector img:last-child {
   margin-top: 100px;
 }
 
+.main3 {
+  background-color: #ffe7d2;
+  margin-top: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main3 h2 {
+  text-align: center;
+  max-width: 50%;
+  margin-top: 50px;
+  font-size: 35px;
+}
+
+.main3 a {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.main3 .message {
+  background-color: #fff;
+  width: 650px;
+  margin: 50px auto;
+  border: 1px solid #bdb5af;
+  border-radius: 5px;
+}
+
+.main3 .message p {
+  margin: 30px;
+}
+
+.main3 .message .founders {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main3 .message .founders img {
+  max-width: 40px;
+}
+
+.main3 .message .founders .founder-img {
+  margin: auto 10px auto 30px;
+}
+
+.main3 .message .founders .founder-txt h4 {
+  color: #2e4691;
+  font-weight: 400;
+}
+
+.main3 .message .founders .founder-txt h6 {
+  color: #bdb5af;
+}
+
+.main3 .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #2e4691;
+  color: white;
+  border: none;
+  transition: background 0.4s, color 0.4s;
+}
+
+.main3 .button:hover {
+  background-color: #243055;
+  color: white;
+}
+
 
