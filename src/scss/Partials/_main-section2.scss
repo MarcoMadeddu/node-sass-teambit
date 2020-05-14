@@ -1,0 +1,28 @@
+// M A I N  2 //
+.main2{
+    width: 95%;
+    height: 900px;
+    .wrapper{
+        @include flex($content:center);
+        margin-top: 40px;
+        height: 500px;
+        margin: 100px 400px 0 0;
+        img{
+            max-width: 900px;
+        }
+        .wrap-text{
+            @include flex($direction:column, $align: flex-start);
+            width: 400px;
+            text-align: left;
+            img{
+                max-width: 300px;
+            }
+            h2{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .wrapper:nth-child(even){
+        margin: 100px 0 0 400px;
+    }
+}

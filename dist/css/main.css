@@ -152,12 +152,12 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 1000px;
   width: 100%;
   background-color: #ffe7d2;
 }
 
-main .core-1 {
+main .core-1,
+main .core-2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -166,13 +166,15 @@ main .core-1 {
   border-bottom: 1px solid #bdb5af;
 }
 
-main .core-1 h2 {
+main .core-1 h2,
+main .core-2 h2 {
   font-size: 25px;
   width: 60%;
   text-align: center;
 }
 
-main .core-1 > img {
+main .core-1 > img,
+main .core-2 > img {
   max-width: 300px;
   margin: 100px 0;
 }
@@ -181,9 +183,9 @@ main .card-collector {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   width: 70%;
-  height: 200pxpx;
+  height: 200px;
   margin-top: 80px;
 }
 
@@ -200,6 +202,50 @@ main .card-collector .card {
 main .card-collector img {
   max-width: 120px;
   margin-bottom: 15px;
+}
+
+main .card-collector img:last-child {
+  display: none;
+}
+
+.main2 {
+  width: 95%;
+  height: 900px;
+}
+
+.main2 .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  height: 500px;
+  margin: 100px 400px 0 0;
+}
+
+.main2 .wrapper img {
+  max-width: 900px;
+}
+
+.main2 .wrapper .wrap-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 400px;
+  text-align: left;
+}
+
+.main2 .wrapper .wrap-text img {
+  max-width: 300px;
+}
+
+.main2 .wrapper .wrap-text h2 {
+  margin-bottom: 20px;
+}
+
+.main2 .wrapper:nth-child(even) {
+  margin: 100px 0 0 400px;
 }
 
 

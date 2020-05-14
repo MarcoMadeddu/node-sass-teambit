@@ -2,10 +2,10 @@
 
 main{
     @include flex($direction:column);
-    height: 1000px;
     width: 100%;
     background-color:$bg-color;
-    .core-1{
+    .core-1,
+    .core-2{
         @include flex($direction:column);
         margin-top: 80px;
         border-bottom: 1px solid $border-color;
@@ -20,9 +20,9 @@ main{
         }
     }
     .card-collector{
-        @include flex($content: space-between);
+        @include flex($content: space-between , $align: baseline);
         width: 70%;
-        height: 200pxpx;
+        height: 200px;
         margin-top: 80px;
         .card{
             flex-basis: calc(100% / 3);
@@ -36,6 +36,9 @@ main{
         img{
             max-width: 120px;
             margin-bottom: 15px;
+        }
+        & img:last-child{
+            display: none;
         }
     }
 }
