@@ -1,0 +1,45 @@
+// F O O T E R//
+footer{
+    @include flex;
+    width: 90%;
+    height: 600px;
+    border: 1px solid blueviolet;
+    margin-top: 100px;
+    .footer-left{
+        display: flex;
+        justify-content: baseline;
+        align-items: flex-start;
+        height: 100%;
+        flex-basis: 30%;
+        border: 1px solid black;
+        img{
+            width: 150px;
+            margin-right: 30px;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        span{
+            color: $btn-color;
+        }
+    }
+    .footer-right{
+        @include flex($align:start , $justify:center);
+        height: 100%;
+        flex-basis: 70%;
+        border: 1px solid blue;
+        
+        h4{
+          text-align: center;
+        }
+        .foot-item{
+            flex-basis: calc(100% / 5 );
+            text-align: left;
+            border: 1px solid black;
+            li{
+                text-align: left;
+            }
+        }
+    }
+}
