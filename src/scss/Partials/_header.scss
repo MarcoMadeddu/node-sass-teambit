@@ -1,6 +1,6 @@
 // H E A D E R //
 header{
-    @include flex(center);
+    @include flex($align:center);
     height: 80px;
     border-bottom: 1px solid $border-color;
     .left-side{
@@ -10,13 +10,20 @@ header{
     }
     .right-side{
         flex-basis: 50%;
-       @include flex(center);
-        .menu-inline li{
-            display: inline-block;
-            list-style: none;
-            margin-right: 40px;
+       @include flex($align:center);
+       .menu-inline{
+            height: 20px;
+            @include flex($align:center , $content: center);
+            li{
+                
+                list-style: none;
+                margin-right: 40px;
+                i{
+                    margin-bottom: 5px;
+                }
+            }
             
-        }
+       }
         .button{
             @include button($color: $btn-color , $width:110px , $bg-color:white , $border:2px solid $btn-color, $bg-hover: $btn-color);
         }

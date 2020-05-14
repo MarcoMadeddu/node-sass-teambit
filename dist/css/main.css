@@ -46,7 +46,7 @@ a {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 80px;
   border-bottom: 1px solid #bdb5af;
@@ -65,14 +65,25 @@ header .right-side {
   flex-basis: 50%;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header .right-side .menu-inline {
+  height: 20px;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
 header .right-side .menu-inline li {
-  display: inline-block;
   list-style: none;
   margin-right: 40px;
+}
+
+header .right-side .menu-inline li i {
+  margin-bottom: 5px;
 }
 
 header .right-side .button {
@@ -208,7 +219,7 @@ main .card-collector h4 {
 }
 
 main .card-collector img {
-  max-width: 120px;
+  max-height: 120px;
   margin-bottom: 15px;
 }
 
@@ -216,18 +227,13 @@ main .card-collector img:last-child {
   display: none;
 }
 
-.main2 {
-  height: 900px;
-}
-
 .main2 .wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  height: 500px;
-  margin: 100px 400px 0 0;
+  max-height: 500px;
+  margin: 200px 50px 0 0;
 }
 
 .main2 .wrapper img {
@@ -239,7 +245,7 @@ main .card-collector img:last-child {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 100%;
+  height: 500px;
 }
 
 .main2 .wrapper .wrap-text img {
@@ -263,7 +269,11 @@ main .card-collector img:last-child {
 }
 
 .main2 .wrapper:nth-child(even) {
-  margin: 100px 0 0 400px;
+  margin: 200px 0 0 50px;
+}
+
+.main2 .wrapper:nth-child(1) {
+  margin-top: 100px;
 }
 
 
