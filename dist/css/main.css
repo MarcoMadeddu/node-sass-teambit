@@ -110,6 +110,12 @@ header .right-side .button:hover {
   color: white;
 }
 
+@media (max-width: 576px) {
+  header .right-side .menu-inline {
+    display: none;
+  }
+}
+
 .jumbotron {
   display: flex;
   height: 500px;

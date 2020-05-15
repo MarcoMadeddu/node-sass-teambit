@@ -29,4 +29,25 @@ header{
         }
     }
 }
+@media (max-width: 576px) {
+    header{
+        .right-side{
+            .menu-inline{
+                display: none;
+            }
+        }
+    }
+    
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+   
+  
+}
 
