@@ -40,9 +40,43 @@ main{
             max-height: 120px;
             margin-bottom: 15px;
         }
-        & img:last-child{
-            display: none;
-        }
     }
     
 }
+@media (max-width: 715px) {
+    .core-1,
+    .core-2{
+        .card-collector{
+            flex-wrap: wrap;
+            height: auto;
+            .card{
+                flex-basis: 100%;
+                margin-bottom: 50px;
+            }
+        }
+    }
+   
+    
+ }
+
+ @media (max-width: 880px) {
+
+    .jumbotron{
+        margin: 0;
+        flex-wrap: wrap;
+        height: 1000px;
+        .jumbo-left{
+            flex-basis: 100%;
+            @include flex($direction: column, $align: center, $content: center);
+            h2{
+            
+                text-align: center;
+            }
+        }
+        .jumbo-right{
+            flex-basis: 100%;
+            margin-bottom: 50px;
+        }
+    }
+    
+ }

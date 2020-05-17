@@ -6,11 +6,11 @@ header{
     .left-side{
        @include flex;
         height: 20px;
-        flex-basis: 50%;
+        flex-basis: 10%;
     }
     .right-side{
-        flex-basis: 50%;
-       @include flex($align:center);
+        flex-basis: 90%;
+       @include flex($align:center , $content: flex-end);
        .menu-inline{
             height: 20px;
             @include flex($align:center , $content: center);
@@ -22,32 +22,30 @@ header{
                     margin-bottom: 5px;
                 }
             }
-            
        }
+       .hamburgher {
+        display: none;
+    }
         .button{
             @include button($color: $btn-color , $width:110px , $bg-color:white , $border:2px solid $btn-color, $bg-hover: $btn-color);
         }
     }
 }
-@media (max-width: 576px) {
+@media (max-width: 715px) {
+    
     header{
         .right-side{
-            .menu-inline{
+            .menu-inline,
+            .button{
                 display: none;
+            }
+            .hamburgher{
+                display: block;
+                font-size: 25px;
             }
         }
     }
     
  }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
-    
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-   
-  
-}
 
